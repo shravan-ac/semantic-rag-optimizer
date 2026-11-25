@@ -1,0 +1,667 @@
+{
+    "dataset_path": "D:\\Projects\\RAG projects\\semantic-rag-optimizer\\app\\evaluation\\cache_pairs.json",
+    "pair_count": 40,
+    "positive_count": 19,
+    "negative_count": 21,
+    "model_summaries": {
+        "BGE cosine similarity": {
+            "best_metrics": {
+                "threshold": 0.7732161581516266,
+                "tp": 17,
+                "fp": 15,
+                "tn": 6,
+                "fn": 2,
+                "precision": 0.53125,
+                "recall": 0.8947368421052632,
+                "f1": 0.6666666666666666
+            }
+        },
+        "MiniLM bidirectional mean": {
+            "best_metrics": {
+                "threshold": -5.802648425102234,
+                "tp": 18,
+                "fp": 16,
+                "tn": 5,
+                "fn": 1,
+                "precision": 0.5294117647058824,
+                "recall": 0.9473684210526315,
+                "f1": 0.679245283018868
+            }
+        },
+        "NLI bidirectional minimum": {
+            "best_metrics": {
+                "threshold": 0.002235862077213824,
+                "tp": 15,
+                "fp": 3,
+                "tn": 18,
+                "fn": 4,
+                "precision": 0.8333333333333334,
+                "recall": 0.7894736842105263,
+                "f1": 0.8108108108108109
+            }
+        },
+        "NLI bidirectional mean": {
+            "best_metrics": {
+                "threshold": 0.2745816856622696,
+                "tp": 17,
+                "fp": 0,
+                "tn": 21,
+                "fn": 2,
+                "precision": 1.0,
+                "recall": 0.8947368421052632,
+                "f1": 0.9444444444444444
+            }
+        }
+    },
+    "pairs": [
+        {
+            "id": 1,
+            "category": "annual_leave",
+            "question_a": "How many annual leave days do employees receive?",
+            "question_b": "What is the yearly annual leave entitlement?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8120856285095215,
+                "MiniLM bidirectional mean": -3.6433489322662354,
+                "NLI bidirectional minimum": 0.002583307446911931,
+                "NLI bidirectional mean": 0.4798021912574768
+            }
+        },
+        {
+            "id": 2,
+            "category": "annual_leave",
+            "question_a": "How many annual leave days do employees receive?",
+            "question_b": "What is my yearly vacation allowance?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.6667940020561218,
+                "MiniLM bidirectional mean": -9.323196411132812,
+                "NLI bidirectional minimum": 0.004289485514163971,
+                "NLI bidirectional mean": 0.3871634900569916
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 3,
+            "category": "annual_leave",
+            "question_a": "How much paid annual leave is provided each year?",
+            "question_b": "How many paid vacation days are employees entitled to annually?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.7792516946792603,
+                "MiniLM bidirectional mean": -1.901853322982788,
+                "NLI bidirectional minimum": 0.1519722044467926,
+                "NLI bidirectional mean": 0.5638400912284851
+            }
+        },
+        {
+            "id": 4,
+            "category": "annual_leave",
+            "question_a": "What is the annual leave allowance?",
+            "question_b": "How many days of annual leave can I take per year?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8167575597763062,
+                "MiniLM bidirectional mean": -3.6812195777893066,
+                "NLI bidirectional minimum": 0.00047324225306510925,
+                "NLI bidirectional mean": 0.278013676404953
+            },
+            "misclassified_by": [
+                "NLI bidirectional minimum"
+            ]
+        },
+        {
+            "id": 5,
+            "category": "sick_leave",
+            "question_a": "How many sick leave days are available?",
+            "question_b": "How many paid sick days do employees get each year?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8413678407669067,
+                "MiniLM bidirectional mean": -1.2337467670440674,
+                "NLI bidirectional minimum": 0.0038683919701725245,
+                "NLI bidirectional mean": 0.4538736343383789
+            }
+        },
+        {
+            "id": 6,
+            "category": "sick_leave",
+            "question_a": "What is the annual sick leave entitlement?",
+            "question_b": "How many sick days can an employee take annually?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.7309285998344421,
+                "MiniLM bidirectional mean": -5.502656698226929,
+                "NLI bidirectional minimum": 0.6519352793693542,
+                "NLI bidirectional mean": 0.6564618349075317
+            },
+            "misclassified_by": [
+                "BGE cosine similarity"
+            ]
+        },
+        {
+            "id": 7,
+            "category": "approval",
+            "question_a": "Who approves leave requests?",
+            "question_b": "Who is responsible for approving my leave?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8944545388221741,
+                "MiniLM bidirectional mean": 2.512425661087036,
+                "NLI bidirectional minimum": 0.9380653500556946,
+                "NLI bidirectional mean": 0.9539704322814941
+            }
+        },
+        {
+            "id": 8,
+            "category": "approval",
+            "question_a": "Who must approve an employee's leave application?",
+            "question_b": "Does the reporting manager need to approve leave?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.815837025642395,
+                "MiniLM bidirectional mean": 0.6829802393913269,
+                "NLI bidirectional minimum": 0.0013494116719812155,
+                "NLI bidirectional mean": 0.45190316438674927
+            },
+            "misclassified_by": [
+                "NLI bidirectional minimum"
+            ]
+        },
+        {
+            "id": 9,
+            "category": "application",
+            "question_a": "How early should I apply for leave?",
+            "question_b": "How many working days in advance must leave be requested?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8426092863082886,
+                "MiniLM bidirectional mean": -4.069576859474182,
+                "NLI bidirectional minimum": 0.0005542488652281463,
+                "NLI bidirectional mean": 0.000983595266006887
+            },
+            "misclassified_by": [
+                "NLI bidirectional minimum",
+                "NLI bidirectional mean"
+            ]
+        },
+        {
+            "id": 10,
+            "category": "application",
+            "question_a": "When should employees submit their leave requests?",
+            "question_b": "How far ahead must an employee apply for leave?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8387896418571472,
+                "MiniLM bidirectional mean": -2.6614550948143005,
+                "NLI bidirectional minimum": 0.9114383459091187,
+                "NLI bidirectional mean": 0.9268151521682739
+            }
+        },
+        {
+            "id": 11,
+            "category": "carry_forward",
+            "question_a": "Can unused annual leave be carried forward?",
+            "question_b": "Can employees transfer unused annual leave to the next year?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.9016232490539551,
+                "MiniLM bidirectional mean": 3.721187114715576,
+                "NLI bidirectional minimum": 0.08875487744808197,
+                "NLI bidirectional mean": 0.5382320284843445
+            }
+        },
+        {
+            "id": 12,
+            "category": "carry_forward",
+            "question_a": "What is the maximum annual leave carry-forward allowance?",
+            "question_b": "How many unused annual leave days can be carried into the next year?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8224879503250122,
+                "MiniLM bidirectional mean": -2.633021116256714,
+                "NLI bidirectional minimum": 0.003999027423560619,
+                "NLI bidirectional mean": 0.2076183408498764
+            },
+            "misclassified_by": [
+                "NLI bidirectional mean"
+            ]
+        },
+        {
+            "id": 13,
+            "category": "medical",
+            "question_a": "When can medical documentation be requested for sick leave?",
+            "question_b": "After how many consecutive working days of sickness may a medical certificate be requested?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8288294076919556,
+                "MiniLM bidirectional mean": 0.13779520988464355,
+                "NLI bidirectional minimum": 0.013156995177268982,
+                "NLI bidirectional mean": 0.4871916174888611
+            }
+        },
+        {
+            "id": 14,
+            "category": "emergency_leave",
+            "question_a": "Can employees request leave during unexpected personal situations?",
+            "question_b": "Is emergency leave available for unforeseen personal circumstances?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8483961224555969,
+                "MiniLM bidirectional mean": -0.158665519207716,
+                "NLI bidirectional minimum": 0.3190566301345825,
+                "NLI bidirectional mean": 0.6401512622833252
+            }
+        },
+        {
+            "id": 15,
+            "category": "emergency_leave",
+            "question_a": "How is emergency leave approved?",
+            "question_b": "What determines whether an emergency leave request is approved?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.9274148941040039,
+                "MiniLM bidirectional mean": 3.83436381816864,
+                "NLI bidirectional minimum": 0.8612033724784851,
+                "NLI bidirectional mean": 0.9277958273887634
+            }
+        },
+        {
+            "id": 16,
+            "category": "annual_vs_sick",
+            "question_a": "How many annual leave days do employees receive?",
+            "question_b": "How many sick leave days do employees receive?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.8716322183609009,
+                "MiniLM bidirectional mean": 1.7004979252815247,
+                "NLI bidirectional minimum": 0.000943005143199116,
+                "NLI bidirectional mean": 0.0011719641042873263
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 17,
+            "category": "annual_vs_sick",
+            "question_a": "What is the annual leave entitlement?",
+            "question_b": "What is the sick leave entitlement?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.8508398532867432,
+                "MiniLM bidirectional mean": 0.9544962644577026,
+                "NLI bidirectional minimum": 0.0014384124660864472,
+                "NLI bidirectional mean": 0.001757330959662795
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 18,
+            "category": "approval_vs_entitlement",
+            "question_a": "Who approves leave requests?",
+            "question_b": "How many annual leave days are available?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.7343174815177917,
+                "MiniLM bidirectional mean": -9.38752555847168,
+                "NLI bidirectional minimum": 0.0001635230437386781,
+                "NLI bidirectional mean": 0.0002068207977572456
+            }
+        },
+        {
+            "id": 19,
+            "category": "approval_vs_application",
+            "question_a": "Who approves leave applications?",
+            "question_b": "How many days in advance must leave be requested?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.7397377490997314,
+                "MiniLM bidirectional mean": -7.079672574996948,
+                "NLI bidirectional minimum": 0.000100565972388722,
+                "NLI bidirectional mean": 0.0003613797016441822
+            }
+        },
+        {
+            "id": 20,
+            "category": "carry_forward_vs_entitlement",
+            "question_a": "Can unused annual leave be carried forward?",
+            "question_b": "How many annual leave days do employees receive each year?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.7442312836647034,
+                "MiniLM bidirectional mean": -6.102640151977539,
+                "NLI bidirectional minimum": 0.0010642125271260738,
+                "NLI bidirectional mean": 0.001394638093188405
+            }
+        },
+        {
+            "id": 21,
+            "category": "carry_forward",
+            "question_a": "How many annual leave days can be carried forward?",
+            "question_b": "How many sick leave days can be carried forward?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.8829020261764526,
+                "MiniLM bidirectional mean": 3.0116482973098755,
+                "NLI bidirectional minimum": 0.0005954632069915533,
+                "NLI bidirectional mean": 0.000711760250851512
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 22,
+            "category": "medical_vs_entitlement",
+            "question_a": "How many sick leave days are available?",
+            "question_b": "When is medical documentation required?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.5712224245071411,
+                "MiniLM bidirectional mean": -11.26236867904663,
+                "NLI bidirectional minimum": 0.00027808910817839205,
+                "NLI bidirectional mean": 0.00487040588632226
+            }
+        },
+        {
+            "id": 23,
+            "category": "emergency_vs_annual",
+            "question_a": "Can employees request emergency leave?",
+            "question_b": "How many annual leave days do employees receive?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.7175998687744141,
+                "MiniLM bidirectional mean": -6.720139980316162,
+                "NLI bidirectional minimum": 0.00017810238932725042,
+                "NLI bidirectional mean": 0.0013100877404212952
+            }
+        },
+        {
+            "id": 24,
+            "category": "application_vs_approval",
+            "question_a": "When should leave applications be submitted?",
+            "question_b": "Who is responsible for approving leave applications?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.812218427658081,
+                "MiniLM bidirectional mean": -1.6992324590682983,
+                "NLI bidirectional minimum": 0.0018884167075157166,
+                "NLI bidirectional mean": 0.007259937934577465
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 25,
+            "category": "scope",
+            "question_a": "How many paid sick leave days are provided annually?",
+            "question_b": "How many unpaid sick leave days are provided annually?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.9691335558891296,
+                "MiniLM bidirectional mean": 4.846306562423706,
+                "NLI bidirectional minimum": 0.000635838252492249,
+                "NLI bidirectional mean": 0.0008780480711720884
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 26,
+            "category": "scope",
+            "question_a": "How many working days in advance must leave be requested?",
+            "question_b": "How many calendar days in advance must leave be requested?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.9521194696426392,
+                "MiniLM bidirectional mean": 5.1366753578186035,
+                "NLI bidirectional minimum": 0.015981288626790047,
+                "NLI bidirectional mean": 0.2711496949195862
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean",
+                "NLI bidirectional minimum"
+            ]
+        },
+        {
+            "id": 27,
+            "category": "scope",
+            "question_a": "Who approves annual leave requests?",
+            "question_b": "Who approves emergency leave requests?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.9090285301208496,
+                "MiniLM bidirectional mean": 3.6521068811416626,
+                "NLI bidirectional minimum": 0.0001282214798266068,
+                "NLI bidirectional mean": 0.0001297268900088966
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 28,
+            "category": "scope",
+            "question_a": "How many unused annual leave days can be carried forward?",
+            "question_b": "How many unused annual leave days can be carried backward?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.964784562587738,
+                "MiniLM bidirectional mean": 5.8612775802612305,
+                "NLI bidirectional minimum": 0.0010562175884842873,
+                "NLI bidirectional mean": 0.0024731135927140713
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 29,
+            "category": "scope",
+            "question_a": "Can employees request emergency leave?",
+            "question_b": "Is emergency leave automatically approved?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.8458824753761292,
+                "MiniLM bidirectional mean": 0.6422708965837955,
+                "NLI bidirectional minimum": 0.010378620587289333,
+                "NLI bidirectional mean": 0.19838328659534454
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean",
+                "NLI bidirectional minimum"
+            ]
+        },
+        {
+            "id": 30,
+            "category": "scope",
+            "question_a": "Can medical documentation be requested after more than three consecutive working days of absence?",
+            "question_b": "Is medical documentation mandatory for every sick leave request?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.8532177209854126,
+                "MiniLM bidirectional mean": 0.44838201999664307,
+                "NLI bidirectional minimum": 0.00031158197089098394,
+                "NLI bidirectional mean": 0.0006041639717295766
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 31,
+            "category": "application",
+            "question_a": "How far ahead do employees need to submit leave requests?",
+            "question_b": "What is the required advance notice for a leave application?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8495513200759888,
+                "MiniLM bidirectional mean": -4.83595085144043,
+                "NLI bidirectional minimum": 0.4492926001548767,
+                "NLI bidirectional mean": 0.6643205881118774
+            }
+        },
+        {
+            "id": 32,
+            "category": "application",
+            "question_a": "How many working days in advance must leave be requested?",
+            "question_b": "Can I submit my leave request five working days beforehand?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8908298015594482,
+                "MiniLM bidirectional mean": 3.9680609703063965,
+                "NLI bidirectional minimum": 0.0005974341183900833,
+                "NLI bidirectional mean": 0.4706243574619293
+            },
+            "misclassified_by": [
+                "NLI bidirectional minimum"
+            ]
+        },
+        {
+            "id": 33,
+            "category": "sick_leave",
+            "question_a": "When can the employer ask for medical documentation?",
+            "question_b": "Under what circumstances may employees need to provide medical proof?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8215766549110413,
+                "MiniLM bidirectional mean": -1.5309781432151794,
+                "NLI bidirectional minimum": 0.14065289497375488,
+                "NLI bidirectional mean": 0.5550054311752319
+            }
+        },
+        {
+            "id": 34,
+            "category": "carry_forward",
+            "question_a": "How many unused annual leave days can be carried forward?",
+            "question_b": "What is the maximum annual leave balance transferable to the next year?",
+            "equivalent": true,
+            "scores": {
+                "BGE cosine similarity": 0.8315587639808655,
+                "MiniLM bidirectional mean": -4.671884775161743,
+                "NLI bidirectional minimum": 0.9495052099227905,
+                "NLI bidirectional mean": 0.9570026397705078
+            }
+        },
+        {
+            "id": 35,
+            "category": "application",
+            "question_a": "How many working days in advance must leave be requested?",
+            "question_b": "How many calendar days in advance must leave be requested?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.9521194696426392,
+                "MiniLM bidirectional mean": 5.1366753578186035,
+                "NLI bidirectional minimum": 0.015981288626790047,
+                "NLI bidirectional mean": 0.2711496949195862
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean",
+                "NLI bidirectional minimum"
+            ]
+        },
+        {
+            "id": 36,
+            "category": "sick_leave",
+            "question_a": "Medical documentation may be requested after more than three consecutive working days of absence.",
+            "question_b": "Medical documentation must be submitted for every sick leave request.",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.7671806216239929,
+                "MiniLM bidirectional mean": 2.5523725748062134,
+                "NLI bidirectional minimum": 0.00016386360221076757,
+                "NLI bidirectional mean": 0.0006899551372043788
+            },
+            "misclassified_by": [
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 37,
+            "category": "carry_forward",
+            "question_a": "Employees can carry forward up to five unused annual leave days.",
+            "question_b": "Employees can carry forward up to ten unused annual leave days.",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.9204373955726624,
+                "MiniLM bidirectional mean": 8.629949569702148,
+                "NLI bidirectional minimum": 0.00013130318257026374,
+                "NLI bidirectional mean": 0.00013742857845500112
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 38,
+            "category": "approval",
+            "question_a": "Leave requests must be approved by the reporting manager.",
+            "question_b": "Leave requests are automatically approved when submitted.",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.8235795497894287,
+                "MiniLM bidirectional mean": 5.183616876602173,
+                "NLI bidirectional minimum": 5.176199192646891e-05,
+                "NLI bidirectional mean": 6.0561746067833155e-05
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 39,
+            "category": "annual_leave",
+            "question_a": "How many paid annual leave days are provided each year?",
+            "question_b": "How many unpaid annual leave days are provided each year?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.9424225687980652,
+                "MiniLM bidirectional mean": 4.564560890197754,
+                "NLI bidirectional minimum": 0.00024439976550638676,
+                "NLI bidirectional mean": 0.0004534530162345618
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        },
+        {
+            "id": 40,
+            "category": "emergency_leave",
+            "question_a": "Can employees request leave during unexpected personal situations?",
+            "question_b": "Can employees automatically take leave during unexpected personal situations?",
+            "equivalent": false,
+            "scores": {
+                "BGE cosine similarity": 0.9363400936126709,
+                "MiniLM bidirectional mean": 9.054896354675293,
+                "NLI bidirectional minimum": 0.0010595301864668727,
+                "NLI bidirectional mean": 0.004326198250055313
+            },
+            "misclassified_by": [
+                "BGE cosine similarity",
+                "MiniLM bidirectional mean"
+            ]
+        }
+    ]
+}

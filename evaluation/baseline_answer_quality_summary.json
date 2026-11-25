@@ -1,0 +1,11 @@
+{
+    "total_dataset_questions": 10,
+    "evaluated_questions": 10,
+    "missing_results": 0,
+    "answerable_questions_scored": 8,
+    "average_answerable_token_f1": 0.6254,
+    "unanswerable_questions_checked": 2,
+    "correct_refusal_detections": 2,
+    "refusal_detection_rate": 1.0,
+    "metric_note": "Token F1 measures lexical overlap, not semantic correctness. Manual review is required for factual accuracy and completeness. Refusal detection uses phrase matching."
+}

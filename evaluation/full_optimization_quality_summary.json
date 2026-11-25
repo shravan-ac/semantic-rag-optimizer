@@ -1,0 +1,16 @@
+{
+    "total_dataset_questions": 10,
+    "evaluated_questions": 10,
+    "missing_results": 0,
+    "generation_errors": 0,
+    "answerable_questions_scored": 8,
+    "average_answerable_token_f1": 0.8411,
+    "unanswerable_questions_checked": 2,
+    "correct_refusal_detections": 2,
+    "refusal_detection_rate": 1.0,
+    "cache_hits": 7,
+    "cache_misses": 3,
+    "cache_hit_answerable_token_f1": 0.8584,
+    "cache_miss_answerable_token_f1": 0.72,
+    "metric_note": "Token F1 measures lexical overlap, not semantic or factual correctness. Manually review answerable outputs. Refusal detection uses phrase matching and may produce false positives."
+}

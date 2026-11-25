@@ -1,0 +1,200 @@
+[
+    {
+        "question": "How many annual leave days do employees receive?",
+        "expected_answer": "Employees receive 20 days of paid annual leave every calendar year.",
+        "generated_answer": "Employees are entitled to 20 days of paid annual leave every calendar year (Source: leave_policy.txt, Document 1).",
+        "answerable": true,
+        "expected_chunk": 1,
+        "retrieved_chunks": [
+            1,
+            4,
+            5
+        ],
+        "retrieval_hit": true,
+        "refusal_detected": false,
+        "review_status": "MANUAL_REVIEW",
+        "generation_status": "SUCCESS",
+        "model": "semantic-cache",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "latency_ms": 8233.78
+    },
+    {
+        "question": "Who approves leave requests?",
+        "expected_answer": "The employee's reporting manager must approve leave requests.",
+        "generated_answer": "Based on the provided documents, all leave requests must be approved by the employee's reporting manager (Source: leave_policy.txt).",
+        "answerable": true,
+        "expected_chunk": 3,
+        "retrieved_chunks": [
+            3,
+            6,
+            2
+        ],
+        "retrieval_hit": true,
+        "refusal_detected": false,
+        "review_status": "MANUAL_REVIEW",
+        "generation_status": "SUCCESS",
+        "model": "semantic-cache",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "latency_ms": 1075.91
+    },
+    {
+        "question": "How early must I apply for leave?",
+        "expected_answer": "Employees must submit leave requests at least five working days in advance.",
+        "generated_answer": "Based on the provided documents, employees must submit leave requests at least five working days in advance (Source: Document 1, `leave_policy.txt`).",
+        "answerable": true,
+        "expected_chunk": 2,
+        "retrieved_chunks": [
+            2,
+            0,
+            4
+        ],
+        "retrieval_hit": true,
+        "refusal_detected": false,
+        "review_status": "MANUAL_REVIEW",
+        "generation_status": "SUCCESS",
+        "model": "semantic-cache",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "latency_ms": 1214.05
+    },
+    {
+        "question": "Can unused annual leave be carried forward?",
+        "expected_answer": "Employees can carry forward a maximum of five unused annual leave days to the next calendar year.",
+        "generated_answer": "Yes, employees can carry forward a maximum of five unused annual leave days to the next calendar year (Source: leave_policy.txt).",
+        "answerable": true,
+        "expected_chunk": 4,
+        "retrieved_chunks": [
+            4,
+            0,
+            1
+        ],
+        "retrieval_hit": true,
+        "refusal_detected": false,
+        "review_status": "MANUAL_REVIEW",
+        "generation_status": "SUCCESS",
+        "model": "semantic-cache",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "latency_ms": 1259.71
+    },
+    {
+        "question": "How many sick leave days are available?",
+        "expected_answer": "Employees receive 10 paid sick leave days per year.",
+        "answerable": true,
+        "expected_chunk": 5,
+        "generation_status": "ERROR",
+        "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+        "review_status": "ERROR"
+    },
+    {
+        "question": "When can medical documentation be requested?",
+        "expected_answer": "Medical documentation may be requested for absences longer than three consecutive working days.",
+        "generated_answer": "Based on the provided documents, medical documentation may be requested for absences longer than three consecutive working days (Source: leave_policy.txt, Document 1).",
+        "answerable": true,
+        "expected_chunk": 5,
+        "retrieved_chunks": [
+            5,
+            6,
+            2
+        ],
+        "retrieval_hit": true,
+        "refusal_detected": false,
+        "review_status": "MANUAL_REVIEW",
+        "generation_status": "SUCCESS",
+        "model": "semantic-cache",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "latency_ms": 2300.52
+    },
+    {
+        "question": "Can employees request emergency leave?",
+        "expected_answer": "Employees may request emergency leave in unexpected personal situations, with approval depending on the circumstances.",
+        "generated_answer": "Yes, employees may request emergency leave in unexpected personal situations, as explicitly stated in Document 1 (`leave_policy.txt`).",
+        "answerable": true,
+        "expected_chunk": 6,
+        "retrieved_chunks": [
+            6,
+            2,
+            0
+        ],
+        "retrieval_hit": true,
+        "refusal_detected": false,
+        "review_status": "MANUAL_REVIEW",
+        "generation_status": "SUCCESS",
+        "model": "semantic-cache",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "latency_ms": 1794.33
+    },
+    {
+        "question": "What is the maternity leave policy?",
+        "expected_answer": "The documents do not contain maternity leave information.",
+        "generated_answer": "The available documents do not specify the maternity leave policy. (Source: leave_policy.txt, Documents 1, 2, and 3).",
+        "answerable": false,
+        "expected_chunk": null,
+        "retrieved_chunks": [
+            0,
+            5,
+            1
+        ],
+        "retrieval_hit": null,
+        "refusal_detected": true,
+        "review_status": "REFUSAL_PASS",
+        "generation_status": "SUCCESS",
+        "model": "semantic-cache",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "latency_ms": 1681.8
+    },
+    {
+        "question": "Does the company provide dental insurance?",
+        "expected_answer": "The documents do not contain dental insurance information.",
+        "generated_answer": "The available documents do not specify whether the company provides dental insurance. \n\n*(Source: leave_policy.txt, Documents 1, 2, and 3)*",
+        "answerable": false,
+        "expected_chunk": null,
+        "retrieved_chunks": [
+            0,
+            6,
+            5
+        ],
+        "retrieval_hit": null,
+        "refusal_detected": true,
+        "review_status": "REFUSAL_PASS",
+        "generation_status": "SUCCESS",
+        "model": "semantic-cache",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "latency_ms": 913.54
+    },
+    {
+        "question": "Can I carry forward 10 annual leave days?",
+        "expected_answer": "No. The maximum carry-forward allowance is five unused annual leave days.",
+        "generated_answer": "Based on the provided documents, you cannot carry forward 10 annual leave days. Employees can carry forward a maximum of five unused annual leave days to the next calendar year (Source: leave_policy.txt, Document 1).",
+        "answerable": true,
+        "expected_chunk": 4,
+        "retrieved_chunks": [
+            4,
+            1,
+            2
+        ],
+        "retrieval_hit": true,
+        "refusal_detected": false,
+        "review_status": "MANUAL_REVIEW",
+        "generation_status": "SUCCESS",
+        "model": "gemini/gemini-3.5-flash-lite",
+        "prompt_tokens": 505,
+        "completion_tokens": 47,
+        "total_tokens": 552,
+        "latency_ms": 11500.25
+    }
+]

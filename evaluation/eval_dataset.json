@@ -1,0 +1,63 @@
+
+[
+  {
+    "question": "How many annual leave days do employees receive?",
+    "expected_answer": "Employees receive 20 days of paid annual leave every calendar year.",
+    "expected_chunk": 1,
+    "answerable": true
+  },
+  {
+    "question": "Who approves leave requests?",
+    "expected_answer": "The employee's reporting manager must approve leave requests.",
+    "expected_chunk": 3,
+    "answerable": true
+  },
+  {
+    "question": "How early must I apply for leave?",
+    "expected_answer": "Employees must submit leave requests at least five working days in advance.",
+    "expected_chunk": 2,
+    "answerable": true
+  },
+  {
+    "question": "Can unused annual leave be carried forward?",
+    "expected_answer": "Employees can carry forward a maximum of five unused annual leave days to the next calendar year.",
+    "expected_chunk": 4,
+    "answerable": true
+  },
+  {
+    "question": "How many sick leave days are available?",
+    "expected_answer": "Employees receive 10 paid sick leave days per year.",
+    "expected_chunk": 5,
+    "answerable": true
+  },
+  {
+    "question": "When can medical documentation be requested?",
+    "expected_answer": "Medical documentation may be requested for absences longer than three consecutive working days.",
+    "expected_chunk": 5,
+    "answerable": true
+  },
+  {
+    "question": "Can employees request emergency leave?",
+    "expected_answer": "Employees may request emergency leave in unexpected personal situations, with approval depending on the circumstances.",
+    "expected_chunk": 6,
+    "answerable": true
+  },
+  {
+    "question": "What is the maternity leave policy?",
+    "expected_answer": "The documents do not contain maternity leave information.",
+    "expected_chunk": null,
+    "answerable": false
+  },
+  {
+    "question": "Does the company provide dental insurance?",
+    "expected_answer": "The documents do not contain dental insurance information.",
+    "expected_chunk": null,
+    "answerable": false
+  },
+  {
+    "question": "Can I carry forward 10 annual leave days?",
+    "expected_answer": "No. The maximum carry-forward allowance is five unused annual leave days.",
+    "expected_chunk": 4,
+    "answerable": true
+  }
+]

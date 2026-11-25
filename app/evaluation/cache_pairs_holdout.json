@@ -1,0 +1,143 @@
+
+[
+  {
+    "id": 101,
+    "category": "annual_leave",
+    "question_a": "What is the yearly paid vacation allocation?",
+    "question_b": "How many paid days off for annual leave are granted per year?",
+    "equivalent": true
+  },
+  {
+    "id": 102,
+    "category": "application",
+    "question_a": "What is the minimum notice period for requesting time off?",
+    "question_b": "How far before the leave date should an employee submit a request?",
+    "equivalent": true
+  },
+  {
+    "id": 103,
+    "category": "approval",
+    "question_a": "Which person has to authorize an employee's leave?",
+    "question_b": "Who is responsible for approving a leave application?",
+    "equivalent": true
+  },
+  {
+    "id": 104,
+    "category": "carry_forward",
+    "question_a": "Is unused yearly vacation transferable to the following year?",
+    "question_b": "Can an employee roll over unused annual leave?",
+    "equivalent": true
+  },
+  {
+    "id": 105,
+    "category": "carry_forward",
+    "question_a": "What is the maximum permitted annual leave rollover?",
+    "question_b": "What is the upper limit on unused vacation days transferred to next year?",
+    "equivalent": true
+  },
+  {
+    "id": 106,
+    "category": "sick_leave",
+    "question_a": "What is the yearly paid sick time allowance?",
+    "question_b": "How many paid days off can employees take for illness each year?",
+    "equivalent": true
+  },
+  {
+    "id": 107,
+    "category": "medical_documentation",
+    "question_a": "When may an employee be asked to provide medical proof for an absence?",
+    "question_b": "Under what absence conditions can medical documentation be requested?",
+    "equivalent": true
+  },
+  {
+    "id": 108,
+    "category": "emergency_leave",
+    "question_a": "Can staff request time off for an unforeseen personal problem?",
+    "question_b": "Are employees allowed to apply for emergency leave in unexpected personal circumstances?",
+    "equivalent": true
+  },
+  {
+    "id": 109,
+    "category": "emergency_leave",
+    "question_a": "What factors affect whether emergency time off is accepted?",
+    "question_b": "Does approval of emergency leave depend on the circumstances?",
+    "equivalent": true
+  },
+  {
+    "id": 110,
+    "category": "application",
+    "question_a": "How much advance warning is required before taking annual leave?",
+    "question_b": "What is the required lead time for a vacation request?",
+    "equivalent": true
+  },
+  {
+    "id": 111,
+    "category": "annual_vs_sick",
+    "question_a": "How many paid annual vacation days are granted yearly?",
+    "question_b": "How many paid sick days are granted yearly?",
+    "equivalent": false
+  },
+  {
+    "id": 112,
+    "category": "duration",
+    "question_a": "How many annual leave days are provided each year?",
+    "question_b": "How many sick leave days are provided each year?",
+    "equivalent": false
+  },
+  {
+    "id": 113,
+    "category": "application",
+    "question_a": "Must leave be requested five working days ahead?",
+    "question_b": "Must leave be requested five calendar days ahead?",
+    "equivalent": false
+  },
+  {
+    "id": 114,
+    "category": "carry_forward",
+    "question_a": "Can unused annual leave be transferred to the next year?",
+    "question_b": "Can unused sick leave be transferred to the next year?",
+    "equivalent": false
+  },
+  {
+    "id": 115,
+    "category": "medical_documentation",
+    "question_a": "Can medical documentation be requested for an absence longer than three consecutive working days?",
+    "question_b": "Must medical documentation be submitted for every absence?",
+    "equivalent": false
+  },
+  {
+    "id": 116,
+    "category": "approval",
+    "question_a": "Does the reporting manager approve leave applications?",
+    "question_b": "Does the employee approve their own leave application?",
+    "equivalent": false
+  },
+  {
+    "id": 117,
+    "category": "emergency_leave",
+    "question_a": "Can employees request emergency leave for unexpected situations?",
+    "question_b": "Are employees automatically granted emergency leave for unexpected situations?",
+    "equivalent": false
+  },
+  {
+    "id": 118,
+    "category": "annual_leave",
+    "question_a": "How many annual leave days are granted every year?",
+    "question_b": "How many annual leave days can be carried forward?",
+    "equivalent": false
+  },
+  {
+    "id": 119,
+    "category": "duration",
+    "question_a": "Are employees entitled to twenty paid annual leave days?",
+    "question_b": "Are employees entitled to ten paid annual leave days?",
+    "equivalent": false
+  },
+  {
+    "id": 120,
+    "category": "medical_documentation",
+    "question_a": "Can medical proof be requested after more than three consecutive working days of absence?",
+    "question_b": "Can medical proof be requested after more than three consecutive calendar days of absence?",
+    "equivalent": false
+  }
+]

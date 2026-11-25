@@ -1,0 +1,28 @@
+﻿question,answerable,generated_answer,expected_answer,evaluation_type,precision,recall,token_f1,quality_score,refusal_detected,assessment
+How many annual leave days do employees receive?,True,"Based on the provided documents, employees are entitled to **20 days of paid annual leave every calendar year**.
+
+**Source:** Document 1 (leave_policy.txt) states: ""Employees are entitled to 20 days of paid annual leave every calendar year.""",Employees receive 20 days of paid annual leave every calendar year.,REFERENCE_TOKEN_F1,0.5333333333333333,0.8888888888888888,0.6666666666666667,0.6667,False,MANUAL_REVIEW_REQUIRED
+Who approves leave requests?,True,"Based on the provided documents, **all leave requests must be approved by the employee's reporting manager** (Document 1).
+
+The documents do not specify whether a different approver applies for emergency leave (Document 2 only states that approval ""depends on the circumstances"" without naming an approver).",The employee's reporting manager must approve leave requests.,REFERENCE_TOKEN_F1,0.19230769230769232,0.8333333333333334,0.3125,0.3125,True,MANUAL_REVIEW_REQUIRED
+How early must I apply for leave?,True,"According to the leave policy document, employees must submit leave requests **at least five working days in advance**.
+
+**Source:** Document 1 (leave_policy.txt) states: ""Employees must submit leave requests at least five working days in advance.""",Employees must submit leave requests at least five working days in advance.,REFERENCE_TOKEN_F1,0.5625,1.0,0.72,0.72,False,MANUAL_REVIEW_REQUIRED
+Can unused annual leave be carried forward?,True,"Yes, unused annual leave can be carried forward, but with a limit. According to the leave policy, employees can carry forward a maximum of five unused annual leave days to the next calendar year.  
+
+Source: Document 1 (leave_policy.txt) – Carry Forward section.",Employees can carry forward a maximum of five unused annual leave days to the next calendar year.,REFERENCE_TOKEN_F1,0.4782608695652174,1.0,0.6470588235294118,0.6471,False,MANUAL_REVIEW_REQUIRED
+How many sick leave days are available?,True,"According to Document 1 (leave_policy.txt), employees are entitled to **10 days of paid sick leave per year**.",Employees receive 10 paid sick leave days per year.,REFERENCE_TOKEN_F1,0.5833333333333334,0.875,0.7000000000000001,0.7,False,MANUAL_REVIEW_REQUIRED
+When can medical documentation be requested?,True,"Based on Document 1 (leave_policy.txt), medical documentation may be requested for absences longer than three consecutive working days.",Medical documentation may be requested for absences longer than three consecutive working days.,REFERENCE_TOKEN_F1,0.7692307692307693,1.0,0.8695652173913044,0.8696,False,MANUAL_REVIEW_REQUIRED
+Can employees request emergency leave?,True,"Yes, employees may request emergency leave. According to Document 1 (leave_policy.txt), ""Employees may request emergency leave in unexpected personal situations. Approval depends on the circumstances.""","Employees may request emergency leave in unexpected personal situations, with approval depending on the circumstances.",REFERENCE_TOKEN_F1,0.5714285714285714,0.8,0.6666666666666666,0.6667,False,MANUAL_REVIEW_REQUIRED
+What is the maternity leave policy?,False,"The available documents do not specify any maternity leave policy. The provided leave policy documents only cover:
+
+- **Sick Leave** (Document 2): 10 days of paid sick leave per year, with medical documentation potentially required for absences longer than three consecutive working days.
+- **Annual Leave** (Document 3): 20 days of paid annual leave every calendar year.
+
+No information about maternity, paternity, parental, or family leave is included in the provided context.",The documents do not contain maternity leave information.,REFUSAL_CHECK,,,,,True,REFUSAL_DETECTED
+Does the company provide dental insurance?,False,The available documents do not specify whether the company provides dental insurance. The provided context only covers leave policies (emergency leave and sick leave) and contains no information about insurance benefits or dental coverage.,The documents do not contain dental insurance information.,REFUSAL_CHECK,,,,,True,REFUSAL_DETECTED
+Can I carry forward 10 annual leave days?,True,"Based on the provided document, **you cannot carry forward 10 annual leave days**.
+
+The policy explicitly states: ""Employees can carry forward a maximum of five unused annual leave days to the next calendar year."" (Source: Document 1 - leave_policy.txt)
+
+Since the maximum allowed is 5 days, carrying forward 10 days would exceed this limit.",No. The maximum carry-forward allowance is five unused annual leave days.,REFERENCE_TOKEN_F1,0.2857142857142857,0.8,0.4210526315789473,0.4211,False,MANUAL_REVIEW_REQUIRED

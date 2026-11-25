@@ -1,0 +1,358 @@
+{
+    "model": "cross-encoder/nli-deberta-v3-small",
+    "dataset_size": 30,
+    "records": [
+        {
+            "id": 1,
+            "category": "annual_leave",
+            "question_a": "How many annual leave days do employees receive?",
+            "question_b": "What is the yearly annual leave entitlement?",
+            "equivalent": true,
+            "forward_entailment": 0.9570210576057434,
+            "reverse_entailment": 0.0025832990650087595,
+            "bidirectional_score": 0.0025832990650087595
+        },
+        {
+            "id": 2,
+            "category": "annual_leave",
+            "question_a": "How many annual leave days do employees receive?",
+            "question_b": "What is my yearly vacation allowance?",
+            "equivalent": true,
+            "forward_entailment": 0.7700362205505371,
+            "reverse_entailment": 0.004289498087018728,
+            "bidirectional_score": 0.004289498087018728
+        },
+        {
+            "id": 3,
+            "category": "annual_leave",
+            "question_a": "How much paid annual leave is provided each year?",
+            "question_b": "How many paid vacation days are employees entitled to annually?",
+            "equivalent": true,
+            "forward_entailment": 0.1519722044467926,
+            "reverse_entailment": 0.9757079482078552,
+            "bidirectional_score": 0.1519722044467926
+        },
+        {
+            "id": 4,
+            "category": "annual_leave",
+            "question_a": "What is the annual leave allowance?",
+            "question_b": "How many days of annual leave can I take per year?",
+            "equivalent": true,
+            "forward_entailment": 0.0004732418165076524,
+            "reverse_entailment": 0.5555541515350342,
+            "bidirectional_score": 0.0004732418165076524
+        },
+        {
+            "id": 5,
+            "category": "sick_leave",
+            "question_a": "How many sick leave days are available?",
+            "question_b": "How many paid sick days do employees get each year?",
+            "equivalent": true,
+            "forward_entailment": 0.0038683845195919275,
+            "reverse_entailment": 0.9038791060447693,
+            "bidirectional_score": 0.0038683845195919275
+        },
+        {
+            "id": 6,
+            "category": "sick_leave",
+            "question_a": "What is the annual sick leave entitlement?",
+            "question_b": "How many sick days can an employee take annually?",
+            "equivalent": true,
+            "forward_entailment": 0.6519356369972229,
+            "reverse_entailment": 0.6609863638877869,
+            "bidirectional_score": 0.6519356369972229
+        },
+        {
+            "id": 7,
+            "category": "approval",
+            "question_a": "Who approves leave requests?",
+            "question_b": "Who is responsible for approving my leave?",
+            "equivalent": true,
+            "forward_entailment": 0.9380654692649841,
+            "reverse_entailment": 0.9698754549026489,
+            "bidirectional_score": 0.9380654692649841
+        },
+        {
+            "id": 8,
+            "category": "approval",
+            "question_a": "Who must approve an employee's leave application?",
+            "question_b": "Does the reporting manager need to approve leave?",
+            "equivalent": true,
+            "forward_entailment": 0.0013494116719812155,
+            "reverse_entailment": 0.9024569392204285,
+            "bidirectional_score": 0.0013494116719812155
+        },
+        {
+            "id": 9,
+            "category": "application",
+            "question_a": "How early should I apply for leave?",
+            "question_b": "How many working days in advance must leave be requested?",
+            "equivalent": true,
+            "forward_entailment": 0.001412944751791656,
+            "reverse_entailment": 0.0005542488652281463,
+            "bidirectional_score": 0.0005542488652281463
+        },
+        {
+            "id": 10,
+            "category": "application",
+            "question_a": "When should employees submit their leave requests?",
+            "question_b": "How far ahead must an employee apply for leave?",
+            "equivalent": true,
+            "forward_entailment": 0.9114383459091187,
+            "reverse_entailment": 0.942192018032074,
+            "bidirectional_score": 0.9114383459091187
+        },
+        {
+            "id": 11,
+            "category": "carry_forward",
+            "question_a": "Can unused annual leave be carried forward?",
+            "question_b": "Can employees transfer unused annual leave to the next year?",
+            "equivalent": true,
+            "forward_entailment": 0.08875487744808197,
+            "reverse_entailment": 0.9877091646194458,
+            "bidirectional_score": 0.08875487744808197
+        },
+        {
+            "id": 12,
+            "category": "carry_forward",
+            "question_a": "What is the maximum annual leave carry-forward allowance?",
+            "question_b": "How many unused annual leave days can be carried into the next year?",
+            "equivalent": true,
+            "forward_entailment": 0.003999027423560619,
+            "reverse_entailment": 0.4112376570701599,
+            "bidirectional_score": 0.003999027423560619
+        },
+        {
+            "id": 13,
+            "category": "medical",
+            "question_a": "When can medical documentation be requested for sick leave?",
+            "question_b": "After how many consecutive working days of sickness may a medical certificate be requested?",
+            "equivalent": true,
+            "forward_entailment": 0.013156995177268982,
+            "reverse_entailment": 0.961226224899292,
+            "bidirectional_score": 0.013156995177268982
+        },
+        {
+            "id": 14,
+            "category": "emergency_leave",
+            "question_a": "Can employees request leave during unexpected personal situations?",
+            "question_b": "Is emergency leave available for unforeseen personal circumstances?",
+            "equivalent": true,
+            "forward_entailment": 0.9612458348274231,
+            "reverse_entailment": 0.3190566301345825,
+            "bidirectional_score": 0.3190566301345825
+        },
+        {
+            "id": 15,
+            "category": "emergency_leave",
+            "question_a": "How is emergency leave approved?",
+            "question_b": "What determines whether an emergency leave request is approved?",
+            "equivalent": true,
+            "forward_entailment": 0.9943882822990417,
+            "reverse_entailment": 0.8612033724784851,
+            "bidirectional_score": 0.8612033724784851
+        },
+        {
+            "id": 16,
+            "category": "annual_vs_sick",
+            "question_a": "How many annual leave days do employees receive?",
+            "question_b": "How many sick leave days do employees receive?",
+            "equivalent": false,
+            "forward_entailment": 0.000943005143199116,
+            "reverse_entailment": 0.0014009230071678758,
+            "bidirectional_score": 0.000943005143199116
+        },
+        {
+            "id": 17,
+            "category": "annual_vs_sick",
+            "question_a": "What is the annual leave entitlement?",
+            "question_b": "What is the sick leave entitlement?",
+            "equivalent": false,
+            "forward_entailment": 0.0014384124660864472,
+            "reverse_entailment": 0.0020762495696544647,
+            "bidirectional_score": 0.0014384124660864472
+        },
+        {
+            "id": 18,
+            "category": "approval_vs_entitlement",
+            "question_a": "Who approves leave requests?",
+            "question_b": "How many annual leave days are available?",
+            "equivalent": false,
+            "forward_entailment": 0.00025011831894516945,
+            "reverse_entailment": 0.0001635233493288979,
+            "bidirectional_score": 0.0001635233493288979
+        },
+        {
+            "id": 19,
+            "category": "approval_vs_application",
+            "question_a": "Who approves leave applications?",
+            "question_b": "How many days in advance must leave be requested?",
+            "equivalent": false,
+            "forward_entailment": 0.00010056598694063723,
+            "reverse_entailment": 0.0006221940857358277,
+            "bidirectional_score": 0.00010056598694063723
+        },
+        {
+            "id": 20,
+            "category": "carry_forward_vs_entitlement",
+            "question_a": "Can unused annual leave be carried forward?",
+            "question_b": "How many annual leave days do employees receive each year?",
+            "equivalent": false,
+            "forward_entailment": 0.001725063775666058,
+            "reverse_entailment": 0.0010642125271260738,
+            "bidirectional_score": 0.0010642125271260738
+        },
+        {
+            "id": 21,
+            "category": "carry_forward",
+            "question_a": "How many annual leave days can be carried forward?",
+            "question_b": "How many sick leave days can be carried forward?",
+            "equivalent": false,
+            "forward_entailment": 0.0005954632069915533,
+            "reverse_entailment": 0.0008280573529191315,
+            "bidirectional_score": 0.0005954632069915533
+        },
+        {
+            "id": 22,
+            "category": "medical_vs_entitlement",
+            "question_a": "How many sick leave days are available?",
+            "question_b": "When is medical documentation required?",
+            "equivalent": false,
+            "forward_entailment": 0.009462723508477211,
+            "reverse_entailment": 0.0002780893410090357,
+            "bidirectional_score": 0.0002780893410090357
+        },
+        {
+            "id": 23,
+            "category": "emergency_vs_annual",
+            "question_a": "Can employees request emergency leave?",
+            "question_b": "How many annual leave days do employees receive?",
+            "equivalent": false,
+            "forward_entailment": 0.00017810238932725042,
+            "reverse_entailment": 0.0024420747067779303,
+            "bidirectional_score": 0.00017810238932725042
+        },
+        {
+            "id": 24,
+            "category": "application_vs_approval",
+            "question_a": "When should leave applications be submitted?",
+            "question_b": "Who is responsible for approving leave applications?",
+            "equivalent": false,
+            "forward_entailment": 0.012631459161639214,
+            "reverse_entailment": 0.0018884167075157166,
+            "bidirectional_score": 0.0018884167075157166
+        },
+        {
+            "id": 25,
+            "category": "scope",
+            "question_a": "How many paid sick leave days are provided annually?",
+            "question_b": "How many unpaid sick leave days are provided annually?",
+            "equivalent": false,
+            "forward_entailment": 0.000635838252492249,
+            "reverse_entailment": 0.0011202578898519278,
+            "bidirectional_score": 0.000635838252492249
+        },
+        {
+            "id": 26,
+            "category": "scope",
+            "question_a": "How many working days in advance must leave be requested?",
+            "question_b": "How many calendar days in advance must leave be requested?",
+            "equivalent": false,
+            "forward_entailment": 0.5263180732727051,
+            "reverse_entailment": 0.015981288626790047,
+            "bidirectional_score": 0.015981288626790047
+        },
+        {
+            "id": 27,
+            "category": "scope",
+            "question_a": "Who approves annual leave requests?",
+            "question_b": "Who approves emergency leave requests?",
+            "equivalent": false,
+            "forward_entailment": 0.0001282214798266068,
+            "reverse_entailment": 0.00013123228563927114,
+            "bidirectional_score": 0.0001282214798266068
+        },
+        {
+            "id": 28,
+            "category": "scope",
+            "question_a": "How many unused annual leave days can be carried forward?",
+            "question_b": "How many unused annual leave days can be carried backward?",
+            "equivalent": false,
+            "forward_entailment": 0.0010562175884842873,
+            "reverse_entailment": 0.0038900095969438553,
+            "bidirectional_score": 0.0010562175884842873
+        },
+        {
+            "id": 29,
+            "category": "scope",
+            "question_a": "Can employees request emergency leave?",
+            "question_b": "Is emergency leave automatically approved?",
+            "equivalent": false,
+            "forward_entailment": 0.010378625243902206,
+            "reverse_entailment": 0.38638797402381897,
+            "bidirectional_score": 0.010378625243902206
+        },
+        {
+            "id": 30,
+            "category": "scope",
+            "question_a": "Can medical documentation be requested after more than three consecutive working days of absence?",
+            "question_b": "Is medical documentation mandatory for every sick leave request?",
+            "equivalent": false,
+            "forward_entailment": 0.0008967460016719997,
+            "reverse_entailment": 0.00031158197089098394,
+            "bidirectional_score": 0.00031158197089098394
+        }
+    ],
+    "threshold_metrics": [
+        {
+            "threshold": 0.5,
+            "tp": 4,
+            "fp": 0,
+            "tn": 15,
+            "fn": 11,
+            "precision": 1.0,
+            "recall": 0.26666666666666666,
+            "f1": 0.4210526315789474
+        },
+        {
+            "threshold": 0.6,
+            "tp": 4,
+            "fp": 0,
+            "tn": 15,
+            "fn": 11,
+            "precision": 1.0,
+            "recall": 0.26666666666666666,
+            "f1": 0.4210526315789474
+        },
+        {
+            "threshold": 0.7,
+            "tp": 3,
+            "fp": 0,
+            "tn": 15,
+            "fn": 12,
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.33333333333333337
+        },
+        {
+            "threshold": 0.8,
+            "tp": 3,
+            "fp": 0,
+            "tn": 15,
+            "fn": 12,
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.33333333333333337
+        },
+        {
+            "threshold": 0.9,
+            "tp": 2,
+            "fp": 0,
+            "tn": 15,
+            "fn": 13,
+            "precision": 1.0,
+            "recall": 0.13333333333333333,
+            "f1": 0.23529411764705882
+        }
+    ]
+}
